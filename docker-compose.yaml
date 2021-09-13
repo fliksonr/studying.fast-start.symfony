@@ -1,0 +1,9 @@
+version: '3'
+services:
+  database:
+    image: postgres:11-alpine
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: fast_start
+    ports: [5432]
